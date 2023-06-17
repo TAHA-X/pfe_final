@@ -1,0 +1,149 @@
+/* .section1_projet{
+    height:50vh; position:relative; width:100%;
+    background-image:url("imgs/back1.webp");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.section1_projet::before{
+    position:absolute; content:""; top:0; left:0; width:100%; height:100%;
+    background-color:rgba(0,0,0,0.4); 
+} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.title_page_projet{
+    position:absolute; bottom:10%; left:10%; color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif; font-size:30px;
+    font-weight:bold;
+} 
+/*#d00000 */
+.section_detaills_projet{
+    padding:70px 130px 0px 130px;
+}
+.section_detaills_projet #plan_list{
+    display:flex; justify-content:space-between; gap:18px;
+    flex-wrap:wrap;
+}
+.section_detaills_projet #plan_list .plan_box{
+     width:180px; background-color:black;
+     height:110px; border-radius:10px; display:flex;
+     align-items:center; justify-content:center;
+     flex-direction:column; color:#ffffff;
+     font-family: 'Montserrat', sans-serif;
+}
+.section_detaills_projet #plan_list .plan_box h2{
+    font-size:30px;
+}
+.section_detaills_projet #plan_list .plan_box span{
+    font-size:25px; 
+}
+@media (max-width:1000px) {
+    .section_detaills_projet{
+        padding:70px 17px 0px 17px !important;
+    }
+}
+/* section_rendez_vous */
+.section_rendez_vous{
+    padding:70px 130px 0px 130px; 
+    display:flex;
+    justify-content:space-between;
+}
+@media (max-width:1200px) {
+    .section_rendez_vous{
+        padding:70px 20px 0px 20px; 
+    }
+}
+@media (max-width:1000px) {
+    .section_rendez_vous{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+    .section_rendez_vous .right{
+        width:100% !important;
+    }
+    .section_rendez_vous .left{
+        width:100% !important;
+    }
+}
+.section_rendez_vous .right{
+    height:400px; border:1px solid rgb(243, 243, 243); width:48%;  border-radius:15px;
+    padding:40px;
+}
+.section_rendez_vous .right form{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.section_rendez_vous .right form input,textarea{
+    border:none; transition:all 0.3s; background-color:rgba(0,0,0,0.06);
+    padding:10px; margin:8px 0px;
+}
+.section_rendez_vous .right form input:focus,textarea:focus{
+    outline:2px solid #d00000;
+}
+.section_rendez_vous .right form textarea{
+    padding:10px; height:200px;  resize:none; margin-top:8px;
+}
+.section_rendez_vous .right form strong{
+    font-size:25px;
+}
+.section_rendez_vous .right form .inputs{
+    display:flex; gap:10px; margin-top:20px;
+}
+.section_rendez_vous .right form input,textarea{
+     width:100%;
+}
+.section_rendez_vous .right form label{
+    font-family: 'Ysabeau', sans-serif; font-size:18px; font-weight:bold;
+    color:rgb(127, 126, 126);
+}
+.section_rendez_vous .right form #sendBtn{
+    width:100%; padding:13px; background-color:#d00000; color:white;
+    border:none; transition:all 0.3s; margin-top:20px;
+}
+.section_rendez_vous .right form #sendBtn:hover{
+    background-color:#e61c1c; 
+}
+.section_rendez_vous .left{
+    display:flex; flex-direction:column; justify-content:space-between; width:48%;
+    color:rgb(96, 96, 96); gap:15px;
+}
+.section_rendez_vous .left .box_info{
+    box-shadow:0px 0px 10px 2px rgb(240, 240, 240);
+    padding:40px; display:flex; gap:20px; border:1px solid rgb(240, 240, 240);
+    border-radius:13px; align-items:center; transition:all 0.3s;
+}
+.section_rendez_vous .left .box_info .icon_title{
+    font-size:28px; background-color:#f9fbfe; color:#d00000;
+    min-width:70px; height:70px; border-radius:50%; 
+    display:grid; place-items:center; border: 1px solid rgb(243, 243, 243);
+    box-shadow:0px 0px 5px 4px #f9fbfe;
+}
+.section_rendez_vous .left .box_info .social_media{
+    gap:35px;
+}
+.section_rendez_vous .left .box_info .social_media a{
+    color:rgb(96, 96, 96); font-size:25px; transition:all 1s;
+}
+.section_rendez_vous .left .box_info .social_media a:hover{
+    color:#1100d0; transform:rotate(360deg);
+}
+.section_rendez_vous .left .box_info:hover{
+    box-shadow:0px 0px 10px 4px rgb(240, 240, 240);
+}
+.section_rendez_vous .left .box_info:hover .icon_title{
+    background-color:#d00000; color:white; box-shadow:none;
+}
+/* localisation */
+.section_localisation_projet{
+    padding:70px 130px 0px 130px; 
+}
+@media (max-width:1000px) {
+    .section_localisation_projet{
+        padding:70px 20px 0px 20px; 
+    }
+}
+@media (max-width:700px) {
+    .section_localisation_projet{
+        padding:70px 10px 0px 10px; 
+
+    }
+}
