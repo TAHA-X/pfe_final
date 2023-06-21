@@ -79,8 +79,8 @@ class StatistiquesController extends Controller
             $rendez_vous_reportes = count(rendezVous::where("status",2)->get());
             $rendez_vous_realises = count(rendezVous::where("status",3)->get());
             array_push($residences_rendez_vous_statistiques,(object)["y"=>$rendez_vous_en_cours,"label"=>"en cours"]);
-            array_push($residences_rendez_vous_statistiques,(object)["y"=>$rendez_vous_reportes,"label"=>"reportés"]);
             array_push($residences_rendez_vous_statistiques,(object)["y"=>$rendez_vous_realises,"label"=>"realisés"]);
+            array_push($residences_rendez_vous_statistiques,(object)["y"=>$rendez_vous_reportes,"label"=>"reportés"]);
             // projets
             $projets_list = array();
             $projets = Projet::all();

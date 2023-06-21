@@ -47,9 +47,6 @@
     <!--residences detaills-->
 
 
-
-
-
     var chart = new CanvasJS.Chart("chartResidences_detaills", {
         animationEnabled: true,
         theme: "light2", //"light1", "dark1", "dark2"
@@ -63,22 +60,37 @@
         toolTip:{
             shared: true
         },
-        data:[{
+        data:[   {
             type: "stackedBar100",
-            toolTipContent: "{label}<br><b>{name}:</b> {y} (#percent%)",
+            toolTipContent: "<b>{name}:</b> {y} (#percent%)",
             showInLegend: true, 
-            name: "vendu",
+            name: "en cours",
             dataPoints: 
                     <?php
-                    $vendu = [];
+                    $en_cours = [];
                     foreach ($residences_list as $r) {
                         $r = (object) $r;
-                        array_push($vendu, (object) ['y' =>$r->y, 'label' =>$r->label]);
+                        array_push($en_cours, (object) ['y' =>$r->appartements_en_cours , 'label' => $r->label]);
                     }
-                    // dd($vendu);
-                    echo json_encode($vendu); 
-                    ?>
-            },
+                    echo json_encode($en_cours);
+                    
+                ?>
+    },   {
+        type: "stackedBar100",
+        toolTipContent: "{label}<br><b>{name}:</b> {y} (#percent%)",
+        showInLegend: true, 
+        name: "vendu",
+        dataPoints: 
+                <?php
+                $vendu = [];
+                foreach ($residences_list as $r) {
+                    $r = (object) $r;
+                    array_push($vendu, (object) ['y' =>$r->y, 'label' =>$r->label]);
+                }
+                // dd($vendu);
+                echo json_encode($vendu); 
+                ?>
+        },
             {
                 type: "stackedBar100",
                 toolTipContent: "<b>{name}:</b> {y} (#percent%)",
@@ -94,23 +106,7 @@
                         echo json_encode($pas_vendu);
                         
                         ?>
-            }, 
-            {
-                type: "stackedBar100",
-                toolTipContent: "<b>{name}:</b> {y} (#percent%)",
-                showInLegend: true, 
-                name: "en cours",
-                dataPoints: 
-                        <?php
-                        $en_cours = [];
-                        foreach ($residences_list as $r) {
-                            $r = (object) $r;
-                            array_push($en_cours, (object) ['y' =>$r->appartements_en_cours , 'label' => $r->label]);
-                        }
-                        echo json_encode($en_cours);
-                        
-                    ?>
-        }]
+            }]
     });
     chart.render();
 
@@ -142,5 +138,6 @@
         });
     $(document).ready( function () {
     $('#residences').DataTable();
+    $("#rendez_vous").DataTable();
     });
 @endsection

@@ -2,6 +2,7 @@
 @section("titre")
     projets
 @endsection
+
 <section class="section section1_contact">
   <header class="shadow">
     <h2 id="logo"><i  class="bi logo_title bi-buildings"></i><span class="logo_title">A</span>chorouk</h2>
@@ -9,7 +10,7 @@
         <ul>
             <li ><a class="link_nav" href="{{ url('/') }}">Home</a></li>
             <li><a class="link_nav" href="{{ url('/about') }}">About</a></li>
-            <li><a class="link_nav" href="{{ url('/allResidences') }}">Projet</a></li>
+            <li><a class="link_nav" href="{{ url('/allResidences') }}">Projets</a></li>
             <li class="active"><a class="link_nav" href="{{ url('/guide') }}">Guide</a></li>
         </ul>
         <a  href="{{ url('/contact') }}"><button id="contactBtn">Contacter <i class="bi bi-arrow-right"></i></button></a>
@@ -52,32 +53,19 @@
   <div class="title_paragraph"><div class="circle"></div> comment l'achat se passe ?</div>
   <div id="paragraphs">
       <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ullam optio at 
-          placeat alias perspiciatis reprehenderit quibusdam voluptates id provident laborum a eligendi,
-          dolorem facilis, praesentium sit? Ad quas officia praesentium assumenda soluta ea debitis officiis
-          ipsa nemo. Iusto, quae! Qui reiciendis
-          quibusdam mollitia quo, quos adipisci debitis fugiat corporis.
+        Chez Achorouk, nous vous accompagnons dès votre premier contact dans l'acquisition de votre propriété.
       </p>
       <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ullam optio at 
-          placeat alias perspiciatis reprehenderit quibusdam voluptates id provident laborum a eligendi,
-          dolorem facilis, praesentium sit? Ad quas officia praesentium assumenda soluta ea debitis officiis
-          ipsa nemo. Iusto, quae! Qui reiciendis
-          quibusdam mollitia quo, quos adipisci debitis fugiat corporis.
+          Lors de notre première rencontre, nous vous fournissons une information détaillée sur nos produits, en décrivant chaque projet individuellement : prix, superficie, catégorie, plans généraux et plans architecturaux.
       </p>
       <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ullam optio at 
-          placeat alias perspiciatis reprehenderit quibusdam voluptates id provident laborum a eligendi,
-          dolorem facilis, praesentium sit? Ad quas officia praesentium assumenda soluta ea debitis officiis
-          ipsa nemo. Iusto, quae! Qui reiciendis
-          quibusdam mollitia quo, quos adipisci debitis fugiat corporis.
+Ensuite, nos agents commerciaux vous accompagnent pour visiter les appartements témoins et vous aident à choisir le produit qui correspond le mieux à vos attentes.
       </p>
       <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ullam optio at 
-          placeat alias perspiciatis reprehenderit quibusdam voluptates id provident laborum a eligendi,
-          dolorem facilis, praesentium sit? Ad quas officia praesentium assumenda soluta ea debitis officiis
-          ipsa nemo. Iusto, quae! Qui reiciendis
-          quibusdam mollitia quo, quos adipisci debitis fugiat corporis.
+       Une fois que vous avez fait votre sélection, nous réservons conjointement votre future propriété et finalisons le processus d'achat. Nous étudions également les options de paiement à l'aide d'un simulateur de prêt.
+      </p>
+      <p>
+        Si nous ne recevons pas de réponse de votre part dans le délai imparti, nous vous contacterons personnellement pour comprendre les éventuels obstacles ou raisons qui ont empêché la finalisation du processus d'achat. Ensuite, nous travaillerons ensemble pour trouver des solutions à ces problèmes.
       </p>
   </div>
 </section>

@@ -10,7 +10,7 @@
 @section("body")
 <form enctype="multipart/form-data" action="{{ Route('settingsGlobale') }}" method="post">
     @csrf
-    <div class="mt-2">
+    {{-- <div class="mt-2">
         @if ($settings->logo!="")
            <img style="width:150px; height:150px;" src="{{$settings->logo}}" alt="">
         @else
@@ -18,7 +18,7 @@
         @endif
         <label class="form-label" for="logo">logo :</label>
         <input id="logo" type="file" name="logo"/>
-    </div>
+    </div> --}}
     <div class="mt-2">
         <label class="form-label" for="reseau_sociaux">réseau sociaux :</label>
         <div id="reseau_sociaux" class="d-flex gap-3">

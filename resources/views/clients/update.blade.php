@@ -89,7 +89,7 @@
         @endif
 
         <div class="mt-2">
-            <button class="btn btn-danger" type="submit">ajouter</button>
+            <button class="btn btn-danger" type="submit">modifier</button>
             <a href="javascript:history.go(-1)" class="btn btn-light">back</a>
         </div>
 

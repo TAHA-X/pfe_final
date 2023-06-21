@@ -22,7 +22,7 @@
                         $img = "assets/img/defaultProfile.png";
                       }                            
                 ?>
-                <img src="{{ asset($img) }}" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Taha Echchoual</span>
+                <img src="{{ asset($img) }}" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">{{auth()->user()->prenom}} {{auth()->user()->nom}}</span>
                 </a>
                 <div class="dropdown-menu mt-5 dropdown-menu-end">
                     <a class="dropdown-item" href="{{ Route('profile.edit') }}"><i class="align-middle me-1" data-feather="user"></i> Profile</a>

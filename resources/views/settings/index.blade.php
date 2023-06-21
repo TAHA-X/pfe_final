@@ -19,9 +19,9 @@
         <a style="color:rgb(0, 0, 0); text-decoration:none;" href="{{ Route('settings.projetsPage') }}">
             <div class="settings_optins" style="width:360px; border-radius:15px; display:grid; place-items:center; font-size:40px; font-family:Arial, Helvetica, sans-serif; height:300px; box-shadow:5px 5px 10px rgb(212, 212, 212),inset 3px 3px 10px rgb(235, 235, 235);">Projets</div>
         </a>
-        <a style="color:rgb(0, 0, 0); text-decoration:none;" href="{{ Route('settings.ImagesPages') }}">
+        {{-- <a style="color:rgb(0, 0, 0); text-decoration:none;" href="{{ Route('settings.ImagesPages') }}">
             <div class="settings_optins" style="width:360px; border-radius:15px; display:grid; place-items:center; font-size:40px; font-family:Arial, Helvetica, sans-serif; height:300px; box-shadow:5px 5px 10px rgb(212, 212, 212),inset 3px 3px 10px rgb(235, 235, 235);">Img pages</div>
-        </a>
+        </a> --}}
   </div>
 @endsection
 

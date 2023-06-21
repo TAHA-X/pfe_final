@@ -67,21 +67,25 @@
                </a>
             </li>
 
-            <li class="sidebar-header">
-                Client
-            </li>
+            
+            @if (auth()->user()->status!=="directeur")
+                <li class="sidebar-header">
+                    Client
+                </li>
 
-            <li @if(Request::is('clients')) class="sidebar-item active" @else class="sidebar-item" @endif>
-                <a class="sidebar-link" href="{{ Route('clients.index') }}">
-                    <i class="bi bi-person-circle"></i> <span class="align-middle">naviger</span>
+                <li @if(Request::is('clients')) class="sidebar-item active" @else class="sidebar-item" @endif>
+                    <a class="sidebar-link" href="{{ Route('clients.index') }}">
+                        <i class="bi bi-person-circle"></i> <span class="align-middle">naviger</span>
+                    </a>
+                </li>
+
+                <li @if(Request::is('clients/create')) class="sidebar-item active" @else class="sidebar-item" @endif>
+                    <a class="sidebar-link" href="{{ Route('clients.create') }}">
+                        <i class="bi bi-plus-circle"></i> <span class="align-middle">ajouter</span>
                 </a>
-            </li>
-
-            <li @if(Request::is('clients/create')) class="sidebar-item active" @else class="sidebar-item" @endif>
-                <a class="sidebar-link" href="{{ Route('clients.create') }}">
-                    <i class="bi bi-plus-circle"></i> <span class="align-middle">ajouter</span>
-               </a>
-            </li>
+                </li>
+            @endif
+           
 
 
             <li class="sidebar-header">
@@ -100,33 +104,39 @@
                 </li>
             @endif
 
+            @if (auth()->user()->status!=="directeur")
+                <li class="sidebar-header">
+                    Achat
+                </li>
+                <li @if(Request::is('achats')) class="sidebar-item active" @else class="sidebar-item" @endif>
+                    <a class="sidebar-link" href="{{  Route('achats.index') }}">
+                        <i class="bi bi-person-circle"></i> <span class="align-middle">naviger</span>
+                    </a>
+                </li>
 
-
-            <li class="sidebar-header">
-                Achat
-            </li>
-            <li @if(Request::is('achats')) class="sidebar-item active" @else class="sidebar-item" @endif>
-                <a class="sidebar-link" href="{{  Route('achats.index') }}">
-                    <i class="bi bi-person-circle"></i> <span class="align-middle">naviger</span>
+                <li @if(Request::is('achats/create')) class="sidebar-item active" @else class="sidebar-item" @endif>
+                    <a class="sidebar-link"  href="{{  Route('achats.create') }}">
+                        <i class="bi bi-plus-circle"></i> <span class="align-middle">ajouter</span>
                 </a>
-            </li>
-
-            <li @if(Request::is('achats/create')) class="sidebar-item active" @else class="sidebar-item" @endif>
-                <a class="sidebar-link"  href="{{  Route('achats.create') }}">
-                    <i class="bi bi-plus-circle"></i> <span class="align-middle">ajouter</span>
-               </a>
-            </li>
+                </li>
+            @endif
 
 
-            <li class="sidebar-header">
-                Rendez-vous
-            </li>
 
-            <li @if(Request::is('rendezVous')) class="sidebar-item active" @else class="sidebar-item" @endif>
-                <a class="sidebar-link" href="{{ Route('rendezVous.index') }}">
-                    <i class="bi bi-calendar-check"></i> <span class="align-middle">gérer</span>
-                </a>
-            </li>
+           
+
+            @if (auth()->user()->status!=="directeur")
+                <li class="sidebar-header">
+                    Rendez-vous
+                </li>
+
+                <li @if(Request::is('rendezVous')) class="sidebar-item active" @else class="sidebar-item" @endif>
+                    <a class="sidebar-link" href="{{ Route('rendezVous.index') }}">
+                        <i class="bi bi-calendar-check"></i> <span class="align-middle">gérer</span>
+                    </a>
+                </li>
+            @endif
+          
 {{-- 
             @if (auth()->user()->status=="directeur")
                 <li class="sidebar-header">

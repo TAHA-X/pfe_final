@@ -33,8 +33,9 @@ var logo_responsive = document.getElementById("logo_responsive");
 //     logo_responsive.style.color="white";  
 // })
 
-
+var firstLoad = 0;
 window.onload = ()=>{
+    firstLoad = 1;
     changeBackgroundHomePage();
 }
 // window.onscroll = ()=>{
@@ -118,6 +119,11 @@ function changeBackgroundHomePage(){
     var section1_contents = document.querySelectorAll(".section1_content");
     var i =0;
     section1_contents[i].classList.add("active");
+    // var seconds = 4000;
+    // if(firstLoad==1){
+    //       firstLoad = 0;
+    //       seconds = 0;
+    // }
     setInterval(()=>{
        if(section1_contents.length==i){
           i=0;
@@ -127,7 +133,7 @@ function changeBackgroundHomePage(){
        })  
        section1_contents[i].classList.add("active");
        i++;
-    },4000);
+    },3000);
 }
 if(window.scrollY > 100){
     console.log("test")

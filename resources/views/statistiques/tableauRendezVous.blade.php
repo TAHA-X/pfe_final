@@ -1,7 +1,7 @@
 
 
-<div style="min-width:45%;" class="table-responsive ">
-    <table style="min-height:190px;" id="residences" class="table">
+<div  style="min-width:45%;" class="table-responsive ">
+    <table style="min-height:190px;" id="rendez_vous" class="table">
         <thead>
             <tr>
                 <th>residence</th>

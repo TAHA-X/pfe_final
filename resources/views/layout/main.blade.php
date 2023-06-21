@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="{{asset('assets/css/projets.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/css/projet.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">
+	<link rel="icon" href="{{asset('assets/img/icon.png')}}">
+
 </head>
 
 <body>

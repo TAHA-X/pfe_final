@@ -15,6 +15,7 @@
             <tr>
                 <th>Projet</th>
                 <th>Résidence</th>
+                <th>adresse</th>
                 <th>Numéro</th>
                 <th>Entrée</th>
                 <th>status</th>
@@ -29,6 +30,7 @@
             @foreach ($immeubles as $immeuble)
                         <td>{{ $immeuble->residence->projet->title }}</td>
                         <td>{{ $immeuble->residence->title }}</td>
+                        <td>{{$immeuble->residence->adresse}}</td>
                         <td>{{ $immeuble->num }}</td>
                         <td>{{ $immeuble->entrée }}</td>
                         <td>

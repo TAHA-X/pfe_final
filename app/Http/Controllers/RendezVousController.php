@@ -188,6 +188,6 @@ class RendezVousController extends Controller
             "projet_id"=>$setting_projet->Residence->projet->id,
             "status"=>1
          ]);
-         return redirect()->back()->with("ajouter","vous avez fut un rendez vous avex succé");
+         return redirect()->back()->with("ajouter","nous vous contacterons dès que possible");
     }
 }

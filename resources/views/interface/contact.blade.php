@@ -9,7 +9,7 @@
             <ul>
                 <li><a class="link_nav" href="{{ url('/') }}">Home</a></li>
                 <li><a class="link_nav" href="{{ url('/about') }}">About</a></li>
-                <li><a class="link_nav" href="{{ url('/allResidences') }}">Projet</a></li>
+                <li><a class="link_nav" href="{{ url('/allResidences') }}">Projets</a></li>
                 <li><a class="link_nav" href="{{ url('/guide') }}">Guide</a></li>
             </ul>
             <a  href="{{ url('/contact') }}"><button id="contactBtn">Contacter <i class="bi bi-arrow-right"></i></button></a>
@@ -47,7 +47,7 @@
     <h1 class="title_page">Contacter nous </h1>
 </section>
 @if(session("messageSent"))
-   <div style="z-index:200; position:fixed; top:50%; left:50%; transform:translate(-50%)" id="messageSent" class="alert text-center w-75 alert-success">{{ session("messageSent") }}</div>
+   <div style="z-index:200; position:fixed; top:50%; left:50%; transform:translate(-50%)" id="messageSent" class="alert text-center w-75 alert-success">message est envoyé avec succès</div>
 @endif
 @section("contenu")
 <section class="section section2_contact">

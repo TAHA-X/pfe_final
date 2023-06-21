@@ -42,7 +42,7 @@
                 <label class="form-label" for="residence_id">residence :</label>
                 <select class="form-control" id="residence_id" name="residence_id">
                     @foreach ($residences as $residence)
-                    <option value="{{ $residence->id }}">{{ $residence->title }}</option>
+                       <option value="{{ $residence->id }}">{{ $residence->title }} | {{$residence->adresse}}</option>
                     @endforeach
                 </select>
             </div>

@@ -49,8 +49,8 @@
     </div>
 
 
-    <h3  onclick="titre2();" id="titre2" style="cursor:pointer; margin-top:10px; background-color:rgb(203, 203, 203); padding:6px 10px;" id="slider1">Slider2</h3>
-    <div  style="display:none; background:rgb(199, 199, 199); padding:15px; border-radius:10px;" id="slider2">
+    {{-- <h3  onclick="titre2();" id="titre2" style="cursor:pointer; margin-top:10px; background-color:rgb(203, 203, 203); padding:6px 10px;" id="slider1">Slider2</h3> --}}
+    {{-- <div  style="display:none; background:rgb(199, 199, 199); padding:15px; border-radius:10px;" id="slider2">
         @foreach ($settings2 as $s)
                 <div style="width:100%;">
                     <img style="width:100%; height:400px;" src="{{ $s->img }}" alt="">
@@ -70,7 +70,7 @@
                 <button class="btn btn-success" type="submit">ajouter</button>
             </div>
         </form>
-    </div>
+    </div> --}}
 
 
     <h3  onclick="titre3();" id="titre3" style="cursor:pointer; margin-top:10px; background-color:rgb(203, 203, 203); padding:6px 10px;" >vidéo</h3>

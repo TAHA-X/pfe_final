@@ -10,7 +10,7 @@
             <ul>
                 <li class="active"><a class="link_nav" href="{{ url('/') }}">Home</a></li>
                 <li><a class="link_nav" href="{{ url('/about') }}">About</a></li>
-                <li><a class="link_nav" href="{{ url('/allResidences') }}">Projet</a></li>
+                <li><a class="link_nav" href="{{ url('/allResidences') }}">Projets</a></li>
                 <li><a class="link_nav" href="{{ url('/guide') }}">Guide</a></li>
             </ul>
             <a  href="{{ url('/contact') }}"><button id="contactBtn">Contacter <i class="bi bi-arrow-right"></i></button></a>
@@ -50,9 +50,9 @@
         <div class="section1_content">
             <img src="{{ $settings_home_page->img1 }}"/>
             <div>
-                <span class="title">Innovation</span>
-                <h2 class="description">c'est notre but & notre facon</h2>
-                <a class="link_projets" href="{{ url('/allResidences') }}"><span>Découvrir nos projet</span><i class="bi bi-arrow-right"></i></a>
+                <span class="title">Créativité</span>
+                <h2 class="description">C'est notre signature</h2>
+                <a class="link_projets" href="{{ url('/allResidences') }}"><span>Découvrir nos projets</span><i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
       @endif
@@ -61,9 +61,9 @@
         <div class="section1_content">
             <img src="{{ $settings_home_page->img2 }}"/>
             <div>
-                <span class="title">Confort</span>
-                <h2 class="description">Votre confort est notre priorité</h2>
-                <a class="link_projets" href="{{ url('/allResidences') }}"><span>Découvrir nos projet</span><i class="bi bi-arrow-right"></i></a>
+                <span class="title">Excellence</span>
+                <h2 class="description">C'est notre norme</h2>
+                <a class="link_projets" href="{{ url('/allResidences') }}"><span>Découvrir nos projets</span><i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
       @endif
@@ -72,9 +72,9 @@
         <div class="section1_content">
             <img src="{{ $settings_home_page->img3 }}"/>
             <div>
-                <span class="title">Responsabilité</span>
-                <h2 class="description">Votre confort est notre responsabilité</h2>
-                <a class="link_projets"  href="{{ url('/allResidences') }}"><span>Découvrir nos projet</span><i class="bi bi-arrow-right"></i></a>
+                <span class="title">Confiance</span>
+                <h2 class="description">C'est notre logo</h2>
+                <a class="link_projets"  href="{{ url('/allResidences') }}"><span>Découvrir nos projets</span><i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
       @endif
@@ -86,16 +86,14 @@
 <section class="section section2">
     <div class="left">
         <div class="title_paragraph"><div class="circle"></div> who we are</div>
-        <p>
-            Building when an unknown printer took a galley of type and scram bled it to make 
-            a type specimen book.
-            It has survived not only five centuries, but also the leape.
-        </p>
-        <p>
-            Building when an unknown printer took a galley of type and scram bled it to make 
-            a type specimen book.
-            It has survived not only five centuries, but also the leape.
-        </p>
+       <p style="text-align:justify;"> Achorouk Group occupe une position cruciale dans le secteur de l'immobilier et d
+        u logement en tant que constructeur de complexes résidentiels répondant aux exigences
+         élevées des acheteurs cherchant des logements de qualité supérieure. Le groupe sélectionne
+          soigneusement des emplacements favorables aux résidents et s'engage à améliorer en permanen
+          ce ses services pour atteindre les normes qui répondent à leurs attentes. Cette approche té
+          moigne de l'engagement de Shorouk Group envers l'excellence, ainsi que de son désir constant
+           de s'adapter aux évolutions du marché immobilier
+       </p>
         <a href="contact.html">Contacter nous</a>
     </div>
     <div class="right">

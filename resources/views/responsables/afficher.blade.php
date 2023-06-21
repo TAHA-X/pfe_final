@@ -37,7 +37,7 @@
                         @if($user->img==null)
                             <img style="width:80px; height:80px; border-radius:7px;" src="{{ asset('assets/img/defaultProfile.png')}}"/>
                         @else
-                            <img style="width:80px; height:80px; border-radius:7px;" src="{{ $user->img }}"/>
+                            <img style="width:80px; height:80px; border-radius:7px;" src="{{ asset("$user->img") }}"/>
                         @endif
                     </td>
                     <td>{{ $user->nom }}</td>

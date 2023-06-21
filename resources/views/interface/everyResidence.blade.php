@@ -10,7 +10,7 @@
           <ul>
               <li><a class="link_nav" href="{{ url('/') }}">Home</a></li>
               <li><a class="link_nav" href="{{ url('/about') }}">About</a></li>
-              <li class="active"><a class="link_nav" href="{{ url('/allResidences') }}">Projet</a></li>
+              <li class="active"><a class="link_nav" href="{{ url('/allResidences') }}">Projets</a></li>
               <li><a class="link_nav" href="{{ url('/guide') }}">Guide</a></li>
           </ul>
           <a  href="{{ url('/contact') }}"><button id="contactBtn">Contacter <i class="bi bi-arrow-right"></i></button></a>
@@ -45,7 +45,7 @@
         </div>
       </div>
     </nav> 
-   <h1 class="title_page_projet">Appartements économiques - Dyar Nzaha </h1>
+   <h1 class="title_page_projet">Appartements économiques - {{$projet->title}} </h1>
 </section>
 @if(session("ajouter"))
    <div style="z-index:200; position:fixed; top:50%; left:50%; transform:translate(-50%)" id="message" class="alert text-center w-75 alert-success">{{ session("ajouter") }}</div>

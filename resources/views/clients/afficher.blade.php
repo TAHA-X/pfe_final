@@ -19,7 +19,6 @@
                 <th>sex</th>
                 <th>phone</th>
                 <th>email</th>
-                <th>status</th>
                 @if(auth()->user()->status=="directeur")
                     <th>projet</th>
                     <th>residence</th>
@@ -38,7 +37,6 @@
                         <td>{{ $client->sex }}</td>
                         <td>{{ $client->phone }}</td>
                         <td>{{ $client->email }}</td>
-                        <td>status</td>
                         @if(auth()->user()->status=="directeur")
                             <td>{{ $client->residence->projet->title }}</td>
                             <td>{{ $client->residence->title }}</td>
